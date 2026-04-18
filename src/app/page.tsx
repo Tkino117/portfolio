@@ -1,13 +1,17 @@
 import { About } from "@/components/about";
 import { HeroSection } from "@/components/hero-section";
 import { Introduction } from "@/components/introduction";
+import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="space-y-16">
 			<HeroSection />
 			<Introduction />
 			<About />
+			<Skills />
+			<Projects />
 		</div>
 	);
 }
