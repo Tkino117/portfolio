@@ -8,7 +8,7 @@ import { Skills } from "@/components/skills";
 
 export default function Home() {
 	return (
-		<div className="space-y-16">
+		<div className="space-y-32">
 			<HeroSection />
 			<Introduction />
 			<About />

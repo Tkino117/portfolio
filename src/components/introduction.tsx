@@ -1,6 +1,6 @@
 export function Introduction() {
 	return (
-		<section className="py-24 text-center">
+		<section className="py-12 text-center">
 			<p className="text-lg leading-relaxed">
 				はじめまして。木下拓哉と申します。
 				<br />
