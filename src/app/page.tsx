@@ -1,11 +1,13 @@
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { HeroSection } from "@/components/hero-section";
+import { Introduction } from "@/components/introduction";
 import { SectionTitle } from "@/components/section-title";
 
 export default function Home() {
 	return (
 		<div>
 			<HeroSection />
+			<Introduction />
 			<SectionTitle>About</SectionTitle>
 			<Card>
 				<CardHeader>
