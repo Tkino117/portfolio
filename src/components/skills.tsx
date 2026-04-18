@@ -5,7 +5,7 @@ const languages = ["Python", "Java", "TypeScript", "C", "C++", "C#"];
 
 const stacks = [
 	{
-		category: "AI",
+		category: "AI / Machine Learning",
 		items: [
 			"PyTorch",
 			"LLM Fine-Tuning",
@@ -18,7 +18,7 @@ const stacks = [
 		],
 	},
 	{
-		category: "3D",
+		category: "3D / Computer Graphics",
 		items: [
 			"3D Gaussian Splatting",
 			"点群解析",
@@ -58,11 +58,16 @@ export function Skills() {
 							<CardTitle>{stack.category}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<ul className="space-y-1 text-sm text-muted-foreground">
+							<div className="flex flex-wrap gap-2">
 								{stack.items.map((item) => (
-									<li key={item}>{item}</li>
+									<span
+										key={item}
+										className="rounded-md bg-muted px-2 py-0.5 text-xs text-muted-foreground"
+									>
+										{item}
+									</span>
 								))}
-							</ul>
+							</div>
 						</CardContent>
 					</Card>
 				))}
