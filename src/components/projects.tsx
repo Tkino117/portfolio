@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { SectionTitle } from "@/components/section-title";
@@ -19,6 +20,14 @@ export function Projects() {
 				{projects.map((project) => (
 					<Link key={project.slug} href={`/projects/${project.slug}`}>
 						<Card className="transition-colors hover:bg-muted/50">
+							<div className="relative aspect-video">
+								<Image
+									src="/projects/tmp.png"
+									alt={project.name}
+									fill
+									className="object-cover"
+								/>
+							</div>
 							<CardHeader>
 								<CardTitle>{project.name}</CardTitle>
 							</CardHeader>
