@@ -48,5 +48,9 @@ next-env.d.ts
 .wrangler
 .dev.vars*
 
+# other
+plans/
+.vscode/
+
 
 !.dev.vars.example
