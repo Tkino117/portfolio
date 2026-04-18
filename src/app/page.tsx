@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { Awards } from "@/components/awards";
 import { HeroSection } from "@/components/hero-section";
 import { Introduction } from "@/components/introduction";
 import { Projects } from "@/components/projects";
@@ -12,6 +13,7 @@ export default function Home() {
 			<About />
 			<Skills />
 			<Projects />
+			<Awards />
 		</div>
 	);
 }
