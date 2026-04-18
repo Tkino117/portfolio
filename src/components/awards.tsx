@@ -36,7 +36,7 @@ const awards = [
 export function Awards() {
 	return (
 		<section>
-			<SectionTitle>受賞・採択実績</SectionTitle>
+			<SectionTitle>Awards / Achievements</SectionTitle>
 			<div className="space-y-6">
 				{awards.map((award, i) => (
 					<div key={i} className="flex gap-4">
