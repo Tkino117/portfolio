@@ -35,10 +35,10 @@ function Body() {
 export const videoProductionPlugin: Project = {
 	slug: "video-production-plugin",
 	name: "Line Stroke Pro",
-	tagline: "映像制作現場のための、軽快に動く枠線プラグイン",
+	tagline: "軽快に動く After Effects プラグイン",
 	period: "2024.08 - 2024.11",
 	roles: ["個人開発"],
 	tags: ["画像処理", "アルゴリズム設計", "After Effects"],
-	thumbnailUrl: "/projects/tmp.png",
+	thumbnailUrl: "/projects/line-stroke-pro/thumbnail.png",
 	body: Body,
 };

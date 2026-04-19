@@ -43,6 +43,6 @@ export const timeShare: Project = {
 	period: "2025.05 - 2025.07",
 	roles: ["開発リーダー", "バックエンド開発"],
 	tags: ["Node.js", "TypeScript", "Web API", "VPS"],
-	thumbnailUrl: "/projects/tmp.png",
+	thumbnailUrl: "/projects/time-share/thumbnail.png",
 	body: Body,
 };

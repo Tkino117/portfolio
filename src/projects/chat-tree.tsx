@@ -37,10 +37,10 @@ function Body() {
 export const chatTree: Project = {
 	slug: "chat-tree",
 	name: "Chat Tree",
-	tagline: "枝分かれする会話を、ツリーで扱う AI チャット",
+	tagline: "ツリー形式の AI チャットアプリ",
 	period: "2026.01 - 2026.03",
 	roles: ["個人開発"],
 	tags: ["Next.js", "OpenAI API", "TypeScript", "UI Design"],
-	thumbnailUrl: "/projects/tmp.png",
+	thumbnailUrl: "/general/black-background.png",
 	body: Body,
 };

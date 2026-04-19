@@ -14,6 +14,7 @@ function Body() {
 export const streamingAssistantAi: Project = {
 	slug: "streaming-assistant-ai",
 	name: "配信アシスタントAI",
-	thumbnailUrl: "/projects/tmp.png",
+	tagline: "ローカルで動作する配信パートナー",
+	thumbnailUrl: "/general/black-background.png",
 	body: Body,
 };

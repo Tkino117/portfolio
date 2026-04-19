@@ -4,15 +4,12 @@ import type { Project } from "./types";
 function Body() {
 	return (
 		<>
-			<ProjectSection title="森と向き合うプロジェクト">
+			<ProjectSection title="概要">
 				<p>
 					YAMAMORI
 					は、「森林 × IT」をテーマに進めている研究・開発プロジェクトです。ドローンが森の中を自動で飛び、そこから作った
 					3D のデジタルツインを、現場で XR
 					や Web アプリを通して扱えるようにする——そんな世界を目指しています。
-				</p>
-				<p>
-					出発点になったのは、森林・林業に関わる方々へのヒアリングでした。現場の声を聴いて初めて、日本の森が抱える課題の深さが見えてきました。
 				</p>
 			</ProjectSection>
 
@@ -74,10 +71,10 @@ function Body() {
 export const yamamori: Project = {
 	slug: "yamamori",
 	name: "YAMAMORI",
-	tagline: "森を 3D で扱い、林業の現場を支援する",
+	tagline: "「林業×IT」の産学連携プロジェクト",
 	period: "2025.02 - 現在",
 	roles: ["研究リーダー", "技術開発・プロトタイプ制作"],
 	tags: ["3DGS", "Computer Vision", "XR", "GIS", "Forestry"],
-	thumbnailUrl: "/projects/tmp.png",
+	thumbnailUrl: "/projects/yamamori/thumbnail.png",
 	body: Body,
 };

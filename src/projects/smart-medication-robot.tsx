@@ -35,11 +35,11 @@ function Body() {
 
 export const smartMedicationRobot: Project = {
 	slug: "smart-medication-robot",
-	name: "スマート服薬管理ロボット",
-	tagline: "飲み忘れをそっと防ぐ、遠隔制御の服薬ロボット",
+	name: "Smart Pill Dispenser",
+	tagline: "飲み忘れをそっと防ぐ、服薬ロボット",
 	period: "2024.11 - 2025.01",
 	roles: ["システム開発"],
 	tags: ["Arduino", "Frontend", "Backend", "Sensor", "Servo Control"],
-	thumbnailUrl: "/projects/tmp.png",
+	thumbnailUrl: "/projects/smart-pill-dispenser/thumbnail.png",
 	body: Body,
 };
