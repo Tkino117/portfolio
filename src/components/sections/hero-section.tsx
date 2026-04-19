@@ -6,7 +6,7 @@ export function HeroSection() {
 		<section className="bg-gray-500">
 			<Container className="flex h-dvh items-center justify-center gap-8">
 				<Image
-					src="/main/avatar.png"
+					src="/general/avatar.png"
 					alt="Takuya Kinoshita"
 					width={128}
 					height={128}
