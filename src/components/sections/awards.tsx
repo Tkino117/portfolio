@@ -39,9 +39,10 @@ export function Awards() {
 		<section>
 			<Container>
 			<SectionTitle>Awards / Achievements</SectionTitle>
-			<div className="space-y-6">
+			<div className="relative mx-auto max-w-2xl space-y-6 border-l border-border pl-6">
 				{awards.map((award, i) => (
-					<div key={i} className="flex gap-4">
+					<div key={i} className="relative flex gap-4">
+						<span className="absolute -left-[30px] top-1.5 h-3 w-3 rounded-full border-2 border-background bg-foreground" />
 						<span className="shrink-0 text-sm text-muted-foreground">
 							{award.year}
 						</span>
