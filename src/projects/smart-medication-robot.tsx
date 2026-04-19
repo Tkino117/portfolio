@@ -4,19 +4,27 @@ import type { Project } from "./types";
 function Body() {
 	return (
 		<>
-			<ProjectSection title="Overview">
+			<ProjectSection title="飲み忘れを、小さなロボットでそっと防ぐ">
 				<p>
-					遠隔制御可能な薬の自動排出ロボットをチームで開発しました。高齢者や病院での利用を想定し、毎日一定時間に薬を提供するとともに、アラームで服薬を通知するシステムです。
+					高齢の方や通院中の方にとって、決まった時間に決まった量の薬を飲むのは、思っている以上に難しいことです。このプロジェクトでは、「薬を出すタイミングを自動で管理し、アラームで服薬をそっと知らせる」小さなロボットをチームで作りました。
+				</p>
+			</ProjectSection>
+
+			<ProjectSection title="作ったもの">
+				<p>
+					毎日決まった時間に薬を1回分だけ排出し、音で服薬を促す装置です。遠隔から操作・確認もできるようにし、離れて暮らす家族や医療スタッフにとって使いやすい形を目指しました。
 				</p>
 			</ProjectSection>
 
 			<ProjectSection title="担当領域">
 				<p>
-					ソフトウェア部分としてフロントエンド・バックエンドサーバーの設計、ハードウェア部分として Arduino によるサーボモーター・光感知センサーの制御を担当しました。
+					ハードウェアとソフトウェアの両方を担当しました。ソフトウェア側ではフロントエンドとバックエンドの設計、ハードウェア側では
+					Arduino
+					を使ったサーボモーターと光感知センサーの制御を行いました。
 				</p>
 			</ProjectSection>
 
-			<ProjectSection title="実績">
+			<ProjectSection title="これまでの歩み">
 				<ul className="list-disc space-y-1 pl-5">
 					<li>メディアネットワーク演習 I 2024年度 優勝</li>
 				</ul>
@@ -28,7 +36,7 @@ function Body() {
 export const smartMedicationRobot: Project = {
 	slug: "smart-medication-robot",
 	name: "スマート服薬管理ロボット",
-	tagline: "遠隔制御可能な薬の自動排出ロボット",
+	tagline: "飲み忘れをそっと防ぐ、遠隔制御の服薬ロボット",
 	period: "2024.11 - 2025.01",
 	roles: ["システム開発"],
 	tags: ["Arduino", "Frontend", "Backend", "Sensor", "Servo Control"],
