@@ -1,3 +1,4 @@
+import { Container } from "@/components/container";
 import { SectionTitle } from "@/components/section-title";
 
 const awards = [
@@ -36,6 +37,7 @@ const awards = [
 export function Awards() {
 	return (
 		<section>
+			<Container>
 			<SectionTitle>Awards / Achievements</SectionTitle>
 			<div className="space-y-6">
 				{awards.map((award, i) => (
@@ -52,6 +54,7 @@ export function Awards() {
 					</div>
 				))}
 			</div>
+			</Container>
 		</section>
 	);
 }

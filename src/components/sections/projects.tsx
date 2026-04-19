@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { Container } from "@/components/container";
 import { SectionTitle } from "@/components/section-title";
 
 export const projects = [
@@ -15,6 +16,7 @@ export const projects = [
 export function Projects() {
 	return (
 		<section>
+			<Container>
 			<SectionTitle>Projects</SectionTitle>
 			<div className="grid grid-cols-3 gap-4">
 				{projects.map((project) => (
@@ -35,6 +37,7 @@ export function Projects() {
 					</Link>
 				))}
 			</div>
+			</Container>
 		</section>
 	);
 }

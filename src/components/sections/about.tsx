@@ -1,10 +1,12 @@
+import { Container } from "@/components/container";
 import { SectionTitle } from "@/components/section-title";
 
 export function About() {
 	return (
 		<section>
-			<SectionTitle>About</SectionTitle>
-			<div className="grid gap-8 md:grid-cols-[1fr_auto]">
+			<Container>
+				<SectionTitle>About</SectionTitle>
+				<div className="grid gap-8 md:grid-cols-[1fr_auto]">
 				<div className="space-y-4 text-base leading-relaxed">
 					<p>
 						北海道大学 工学部に所属しています。
@@ -34,6 +36,7 @@ export function About() {
 					</div>
 				</dl>
 			</div>
+			</Container>
 		</section>
 	);
 }

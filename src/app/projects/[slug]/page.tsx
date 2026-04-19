@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { projects } from "@/components/projects";
+import { projects } from "@/components/sections/projects";
 
 type Props = {
 	params: Promise<{ slug: string }>;

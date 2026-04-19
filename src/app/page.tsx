@@ -1,10 +1,10 @@
-import { About } from "@/components/about";
-import { Awards } from "@/components/awards";
-import { Contact } from "@/components/contact";
-import { HeroSection } from "@/components/hero-section";
-import { Introduction } from "@/components/introduction";
-import { Projects } from "@/components/projects";
-import { Skills } from "@/components/skills";
+import { About } from "@/components/sections/about";
+import { Awards } from "@/components/sections/awards";
+import { Contact } from "@/components/sections/contact";
+import { HeroSection } from "@/components/sections/hero-section";
+import { Introduction } from "@/components/sections/introduction";
+import { Projects } from "@/components/sections/projects";
+import { Skills } from "@/components/sections/skills";
 
 export default function Home() {
 	return (

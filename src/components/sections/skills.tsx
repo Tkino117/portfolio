@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Container } from "@/components/container";
 import { SectionTitle } from "@/components/section-title";
 
 const languages = ["Python", "Java", "TypeScript", "C", "C++", "C#"];
@@ -36,6 +37,7 @@ const stacks = [
 export function Skills() {
 	return (
 		<section>
+			<Container>
 			<SectionTitle>Skills</SectionTitle>
 
 			<div className="mb-6">
@@ -72,6 +74,7 @@ export function Skills() {
 					</Card>
 				))}
 			</div>
+			</Container>
 		</section>
 	);
 }
