@@ -15,7 +15,7 @@ export function HeroSection() {
 				/>
 				<div className="flex flex-col gap-2">
 					<h1 className="text-4xl font-bold">Takuya Kinoshita</h1>
-					<p className="text-base text-muted-foreground">
+					<p className="text-base text-gray-300">
 						AI / 3D Research Engineer
 					</p>
 				</div>
