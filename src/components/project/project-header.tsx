@@ -5,15 +5,17 @@ import type { ProjectMeta } from "@/projects/types";
 export function ProjectHeader({ project }: { project: ProjectMeta }) {
 	return (
 		<header className="space-y-6">
-			<div className="relative aspect-video overflow-hidden rounded-lg">
-				<Image
-					src={project.coverUrl ?? project.thumbnailUrl}
-					alt={project.name}
-					fill
-					className="object-cover"
-					priority
-				/>
-			</div>
+			{project.coverUrl && (
+				<div className="relative aspect-video overflow-hidden rounded-lg">
+					<Image
+						src={project.coverUrl}
+						alt={project.name}
+						fill
+						className="object-cover"
+						priority
+					/>
+				</div>
+			)}
 
 			<div className="space-y-2">
 				<h1 className="text-4xl font-bold">{project.name}</h1>
