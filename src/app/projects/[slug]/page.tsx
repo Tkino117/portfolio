@@ -1,10 +1,16 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { projects } from "@/components/sections/projects";
+import { Container } from "@/components/container";
+import { ProjectHeader } from "@/components/project/project-header";
+import { projects } from "@/projects";
 
 type Props = {
 	params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+	return projects.map((project) => ({ slug: project.slug }));
+}
 
 export default async function ProjectPage({ params }: Props) {
 	const { slug } = await params;
@@ -14,15 +20,23 @@ export default async function ProjectPage({ params }: Props) {
 		notFound();
 	}
 
+	const Body = project.body;
+
 	return (
-		<div>
+		<Container className="py-12">
 			<Link
 				href="/"
 				className="text-sm text-muted-foreground hover:underline"
 			>
 				&larr; Back
 			</Link>
-			<h1 className="mt-4 text-3xl font-bold">{project.name}</h1>
-		</div>
+
+			<div className="mt-8 space-y-12">
+				<ProjectHeader project={project} />
+				<article className="space-y-12">
+					<Body />
+				</article>
+			</div>
+		</Container>
 	);
 }
